@@ -168,14 +168,14 @@ function selectionRequired(){
 }
 
 // load next set of question and answers
+// button under construction
+// <button type="button" id="clue-button"><img src="http://clipground.com/images/clue-clipart-2.jpg" id="mg-img" alt="Click here for a clue"></button>
 function loadQuestion () {
   console.log(`The loadQuestion function ran & currentInd is: ${currentInd}`);
   $('main').html(`
     <form class="js-quiz-form">
 
         <section class="quiz-text">
-
-          <button type="button" id="clue-button"><img src="http://clipground.com/images/clue-clipart-2.jpg" id="mg-img" alt="Click here for a clue"></button>
 
           <h3>${quizContent.questions[currentInd]}</h3>
 

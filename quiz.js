@@ -79,18 +79,19 @@ function submitQuestion () {
     // console.log(`The submitQuestion function ran`);
     console.log(quizContent.correct[currentInd-1])
 
-
+    //If no answer is selected, prompt User
     if (!selectAns) {
       console.log('selection is required');
       selectionRequired(selectAns);
-    } else if (currentInd < 10) {
-      selectedAnswer(selectAns);
+    }
+    else if (currentInd < 10) {
+      answerChoice(selectAns);
       loadQuestion();
       console.log('There are still more questions');
     }
     //After all questions have been asked, Final Score Page is loaded
     else {
-      selectedAnswer(selectAns);
+      answerChoice(selectAns);
       finalScorePage();
       console.log('Current index is higher than 10');
     }
@@ -100,7 +101,7 @@ function submitQuestion () {
 }
 
 // popup gif according to right or wrong answer, tally score
-function selectedAnswer (sel){
+function answerChoice (sel){
   // console.log(`The correctAnswer function ran. The selected answer was: ${selectAns}`);
   // console.log(`The correct answer was: ${quizContent.correct[currentInd - 1]}`);
   console.log(`current correct answer: ${quizContent.correct[currentInd-1]}`);
@@ -204,7 +205,6 @@ function loadQuestion () {
             </div>
           </div>
       </form>`);
-  clueButton();
   currentInd++;
 }
 // Clue button on each page, pops up clue with GIF
@@ -238,7 +238,6 @@ function finalScorePage (){
     </div>`);
   $('header').remove();
   //***add a restart quiz button
-  restartQuiz();
 }
 
 function restartQuiz () {
@@ -253,6 +252,8 @@ function renderPage () {
   startPage();
   startQuiz();
   submitQuestion();
+  restartQuiz();
+  clueButton();
 }
 
 // document ready function

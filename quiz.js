@@ -127,7 +127,9 @@ function correctAnswer() {
       <div class="popup">
         <a class="close" href="#">&times;</a>
         <h2>Correct!</h2>
-        <img src="https://78.media.tumblr.com/017a05d490a72db49f457e06e455acbb/tumblr_om53r2LXYL1qms0wao3_500.gif" alt="Correct answer GIF - 'I am merely a humble butler...'" class="popup-gif">
+        <div class="gif-container">
+          <img src="https://78.media.tumblr.com/017a05d490a72db49f457e06e455acbb/tumblr_om53r2LXYL1qms0wao3_500.gif" alt="Correct answer GIF - 'I am merely a humble butler...'" class="popup-gif">
+        </div>
       </div>
     </div>`);
   $('.close').click(function () {
@@ -142,7 +144,10 @@ function wrongAnswer () {
       <div class="popup">
         <a class="close" href="#">&times;</a>
         <h2>I'm so sorry, that is not correct.</h2>
-        <img src="https://m.popkey.co/fd87c4/qdp1D.gif" alt="Wrong answer GIF" class="popup-gif">
+        <div class="gif-container">
+          <img src="https://m.popkey.co/fd87c4/qdp1D.gif" alt="Wrong answer GIF" class="popup-gif">
+        </div>
+        <span id="correct-answer">The correct answer is: ${quizContent.correct[currentInd]}</span>
       </div>
     </div>`);
   $('.close').click(function () {
@@ -159,7 +164,9 @@ function selectionRequired(){
       <div class="popup">
         <a class="close" href="#">&times;</a>
         <h2>Please, pick an answer.</h2>
-        <img src="https://media.giphy.com/media/lH6mJIKkCwQo0/giphy.gif" alt="Please make a selection GIF - Mrs. White is fed up" class="popup-gif">
+        <div class="gif-container">
+          <img src="https://media.giphy.com/media/lH6mJIKkCwQo0/giphy.gif" alt="Please make a selection GIF - Mrs. White is fed up" class="popup-gif">
+        </div>
       </div>
     </div>`);
   $('.close').click(function () {
@@ -176,9 +183,9 @@ function loadQuestion () {
   $('main').html(`
     <form class="js-quiz-form">
 
-        <section class="quiz-text">
+        <fieldset name="possible-answers" class="quiz-text">
 
-          <h3>${quizContent.questions[currentInd]}</h3>
+          <legend>${quizContent.questions[currentInd]}</legend>
 
           <input type="radio" name="answer" id="answer1" required value ="${quizContent.choices[currentInd][0]}">
           <label for="answer1">${quizContent.choices[currentInd][0]}</label>
@@ -192,7 +199,7 @@ function loadQuestion () {
           <input type="radio" name="answer" id="answer1" required value="${quizContent.choices[currentInd][3]}">
           <label for="answer1">${quizContent.choices[currentInd][3]}</label>
           <br>
-         </section>
+        </fieldset>
           <div class="nav-bar">
             <div class="col-3">
               <span class="number">Question ${currentInd + 1}/10</span>
@@ -208,22 +215,22 @@ function loadQuestion () {
   currentInd++;
 }
 // Clue button on each page, pops up clue with GIF
-function clueButton () {
-  $('body').on('click', '#clue-button', function(event){
-    console.log(`The clueButton function ran`);
-    $('body').append(`
-      <div class="overlay">
-        <div class="popup">
-          <a class="close" href="#">&times;</a>
-          <h2>${quizContent.clue[0].text}</h2>
-          ${quizContent.clue[0].img}
-        </div>
-      </div>`);
-  $('.close').click(function () {
-    $('.overlay').remove();
-  })
-  })
-}
+// function clueButton () {
+//   $('body').on('click', '#clue-button', function(event){
+//     console.log(`The clueButton function ran`);
+//     $('body').append(`
+//       <div class="overlay">
+//         <div class="popup">
+//           <a class="close" href="#">&times;</a>
+//           <h2>${quizContent.clue[0].text}</h2>
+//           ${quizContent.clue[0].img}
+//         </div>
+//       </div>`);
+//   $('.close').click(function () {
+//     $('.overlay').remove();
+//   })
+//   })
+// }
 
 
 
@@ -253,7 +260,7 @@ function renderPage () {
   startQuiz();
   submitQuestion();
   restartQuiz();
-  clueButton();
+  // clueButton();
 }
 
 // document ready function

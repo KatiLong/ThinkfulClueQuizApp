@@ -1,0 +1,244 @@
+
+{
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+/*Start Page*/
+#start-button {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 100vh;
+  background: url(http://polklein.com/share/clue.jpg) center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#start-button span {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  width: 60%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2rem;
+  color: white;
+  margin-top: -25px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px dotted white;
+  background-color: rgba(255,255,255,0);
+}
+
+#start-button span:hover {
+  background-color: white;
+  color: salmon;
+}
+
+/*Header styling*/
+header {
+  padding: 30px 0;
+}
+
+.logo {
+  margin: auto;
+  height: 100px;
+}
+
+h2 {
+  color: #a01012;
+  font-size: 30px;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0em;
+}
+
+#subtitle {
+  -webkit-margin-before: .25em;
+  -webkit-margin-after: 1em;
+  font-size: 25px;
+}
+
+/*Form styling*/
+main {
+  margin: 0 auto;
+}
+
+.js-quiz-form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  font-size: 20px;
+  padding: 15px;
+  border: 7px solid #a01012;
+  box-shadow: 0px 2px 6px rgba(0,0,0,1);
+  position: relative;
+}
+
+.quiz-text {
+  /*position: relative;*/
+  padding-left: 0;
+  margin: 0 0 0 20px;
+}
+
+.form-button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #a01012;
+  background: linear-gradient(to bottom, #b5b6b7, white);
+  padding: 3px;
+}
+
+.form-button:hover {
+  background: linear-gradient(to top, #a01012, white);
+  color: white;
+}
+
+/*Clue Button styling*/
+#clue-button {
+  float: right;
+  right: 30px;
+  width: 80px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+#mg-img {
+  width: 100%;
+}
+
+/*form botton "nav bar"*/
+.nav-bar{
+  display: inline-block;
+  width: 100%;
+  font-size: 0px;
+  margin: 40px auto 15px;
+
+}
+
+.col-3 {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+  font-size: 20px;
+}
+
+.score, .number {
+  border: 1px solid grey;
+  background: linear-gradient(to top, #b5b6b7, white);
+  padding: 3px;
+}
+
+/*Final Score Page*/
+.score-page {
+  margin: 0 auto;
+  /*border: 3px solid blue;*/
+  width: 100%;
+  height: 90vh;
+  max-width: 650px;
+  position: relative;
+  text-align: center;
+/*  background: url("https://media.giphy.com/media/q00MEm4eB0x7W/giphy.gif") center center;
+  background-size: contain;
+  background-repeat: no-repeat;*/
+}
+
+.final-img {
+  height: 100%;
+  border: 8px solid red;
+/*  top: 0;
+  left: 0;
+  margin: 0 auto;
+  position: relative;
+  max-width: 600px;
+  */
+}
+/*add span css for smaller than 600px*/
+.score-page span {
+  top: 3%;
+  left: 33%;
+  width: 30%;
+  height: 50px;
+  position: absolute;
+  line-height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px dotted white;
+  background-color: rgba(255,255,255,0);
+}
+
+.score-page button {
+  display: block;
+  position: absolute;
+  font-size: 1rem;
+  bottom: 5%;
+  left: 42%;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 575px) {
+  .js-quiz-form {
+    width: 100%;
+  }
+  h1{
+    margin-top: 20px;
+  }
+}
+
+/*Popup Boxes*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+}
+
+.popup {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: -5px;
+  right: 7px;
+  font-size: 30px;
+  color: red;
+  text-decoration: none;
+}
+
+.popup-gif {
+  position: absolute;
+  /*margin: 0 auto;*/
+  /*padding: 15px;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

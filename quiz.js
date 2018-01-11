@@ -71,7 +71,7 @@ function startQuiz () {
 // Listen for submit button on quiz page to be clicked & run correctAnswer/nextQuestion
 function submitQuestion () {
 
-  $('body').on( 'click', '.form-button', function (event){
+  $('body').on( 'click', '#answer-button', function (event){
     event.preventDefault();
     let selectAns = $('input[name=answer]:checked', '.js-quiz-form').val();
 
@@ -181,6 +181,17 @@ function selectionRequired(){
 function loadQuestion () {
   console.log(`The loadQuestion function ran & currentInd is: ${currentInd}`);
   $('main').html(`
+
+
+        <div class="info-bar">
+          <div class="col-2">
+            <span class="number">Question ${currentInd + 1} of 10</span>
+          </div>
+          <div class="col-2">
+            <span class="score">Score ${currentScore} out of 10</span>
+          </div>
+        </div>
+
     <form class="js-quiz-form">
 
         <fieldset name="possible-answers" class="quiz-text">
@@ -196,24 +207,20 @@ function loadQuestion () {
           <input type="radio" name="answer" id="answer3" required value="${quizContent.choices[currentInd][2]}">
           <label for="answer3">${quizContent.choices[currentInd][2]}</label>
           <br>
-          <input type="radio" name="answer" id="answer1" required value="${quizContent.choices[currentInd][3]}">
+          <input type="radio" name="answer" id="answer4" required value="${quizContent.choices[currentInd][3]}">
           <label for="answer1">${quizContent.choices[currentInd][3]}</label>
           <br>
         </fieldset>
-          <div class="nav-bar">
-            <div class="col-3">
-              <span class="number">Question ${currentInd + 1}/10</span>
-            </div>
-            <div class="col-3">
-              <button type="submit" class="form-button">Submit</button>
-            </div>
-            <div class="col-3">
-              <span class="score">Score: ${currentScore}/10</span>
-            </div>
-          </div>
-      </form>`);
+
+        <div class="wrapper">
+          <button type="submit" id="answer-button"><img src="https://i.lensdump.com/i/M188D.jpg" id="submit-img" alt="Clue Answer button"></button>
+        </div>
+    </form>`);
   currentInd++;
 }
+
+
+
 // Clue button on each page, pops up clue with GIF
 // function clueButton () {
 //   $('body').on('click', '#clue-button', function(event){
@@ -238,11 +245,12 @@ function loadQuestion () {
 function finalScorePage (){
   console.log('The finalScorePage function ran');
   $('main').html(`
-    <div class="score-page">
-      <span>Final Score ${currentScore}/10</span>
-      <img src="https://media.giphy.com/media/q00MEm4eB0x7W/giphy.gif" alt="Something Terrible has happened here" class="final-img">
-      <button type="button" id="restart-quiz">Restart Quiz</button>
-    </div>`);
+      <div class="score-page">
+        <!-- <img src="https://media.giphy.com/media/q00MEm4eB0x7W/giphy.gif" alt="Something Terrible has happened here" class="final-img"> -->
+        <div class="col-2 final-score">Final Score 7 out of 10</div>
+        <button type="button" id="restart-quiz-button" class="col-2">Restart Quiz</button>
+        <img src="http://media.tumblr.com/160d74e4cdfe7a85177d89a4fdfe9e45/tumblr_n2r7yrKSVR1rqrh0yo1_1280.jpg" alt="Black and White Cast Photo" class="final-img-2">
+      </div>`);
   $('header').remove();
   //***add a restart quiz button
 }

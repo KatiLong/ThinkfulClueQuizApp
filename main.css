@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Montserrat:400,500,600,700');
+
 *
 {
   box-sizing: border-box;
   font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
 }
-
+html {
+  margin: 0;
+}
 body {
   text-align: center;
+  background-color: #900;
+  margin: 0;
 }
 
 /*Start Page*/
@@ -45,6 +52,7 @@ body {
 /*Header styling*/
 header {
   padding: 30px 0;
+  background-color: white;
 }
 
 .logo {
@@ -53,7 +61,7 @@ header {
 }
 
 h2 {
-  color: #a01012;
+  color: #900;
   font-size: 30px;
   -webkit-margin-before: 0.5em;
   -webkit-margin-after: 0em;
@@ -67,83 +75,66 @@ h2 {
 
 /*Form styling*/
 main {
+  color: white;
   margin: 0 auto;
+  /*padding-top: 40px;*/
+  line-height: 29px;
+
 }
 
 .js-quiz-form {
+  color: white;
   margin: 0 auto;
   width: 100%;
   max-width: 650px;
   text-align: left;
   font-size: 20px;
-  padding: 15px;
-  border: 7px solid #a01012;
-  box-shadow: 0px 2px 6px rgba(0,0,0,1);
+  padding: 25px;
   position: relative;
+  border-top: 10px white solid;
+}
+
+input {
+  background-color: white;
 }
 
 legend {
   padding: 15px 0px;
-  font-weight: bold;
   font-size: 24px;
 }
 
 fieldset {
   border: none;
+  padding-left: 20px;
+  /*margin: 15px 0 15px 0;*/
+  width: 100%;
 }
 
-.quiz-text {
-  /*position: relative;*/
-  padding-left: 0;
-  margin: 0 0 0 20px;
-}
 
-.form-button {
+#answer-button {
+  /*position: absolute;*/
   font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
-  padding: 3px;
+  /*padding: 10px 5px 5px;*/
+  width: 100px;
+  border: 1px white double;
+  background-color: #900;
+  border-radius: 15px;
+  /*Add border, hover opacity*/
 }
 
-/*// Does not inherit*/
-.form-button {
-  &:hover {
-    color: $purple;
-  }
-
-  /*// Set up base styles, we're going to scale instead of animating width/height*/
-  &::before,
-  &::after {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transform-origin: center;
-    /*// Ensure scaling is done from the center (expands outwards)*/
-  }
-
- /* // scale3d(<scale-horizontal>, <scale-vertical>, <scale-depth>);*/
-  &::before {
-    border-top: 2px solid $purple;
-    border-bottom: 2px solid $purple;
-    transform: scale3d(0,1,1);
-    /*// Shrink only width*/
-  }
-
-  &::after {
-    border-left: 2px solid $purple;
-    border-right: 2px solid $purple;
-    transform: scale3d(1,0,1);
-    /*// Shrink only height*/
-  }
-
-  &:hover::before,
-  &:hover::after {
-    transform: scale3d(1,1,1);
-    /*// Show full-size*/
-    transition: transform 0.5s;
-  }
+#submit-img {
+  border-radius: 10px;
+  width: 100%;
+  /*height: 100vh;*/
 }
 
+.wrapper {
+  /*border: 3px solid blue;*/
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
 /*Clue Button styling*/
 #clue-button {
@@ -159,73 +150,67 @@ fieldset {
 }
 
 /*form botton "nav bar"*/
-.nav-bar{
+.info-bar{
   display: inline-block;
+  max-width: 650px;
   width: 100%;
   font-size: 0px;
-  margin: 40px auto 15px;
+  margin: 45px auto 35px;
 
+  /*border: 3px blue solid;*/
 }
 
-.col-3 {
+.col-2 {
   display: inline-block;
-  width: 33.33%;
+  width: 50%;
   text-align: center;
   font-size: 20px;
 }
 
 .score, .number {
-  border: 1px solid grey;
-  background: linear-gradient(to top, #b5b6b7, white);
-  padding: 3px;
+  padding: 10px;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
 }
 
 /*Final Score Page*/
 .score-page {
-  margin: 0 auto;
-  /*border: 3px solid blue;*/
   width: 100%;
+  display: inline-block;
+/*.final-img*/
+/*  width: 100%;
   height: 90vh;
   max-width: 650px;
   position: relative;
-  text-align: center;
-/*  background: url("https://media.giphy.com/media/q00MEm4eB0x7W/giphy.gif") center center;
-  background-size: contain;
-  background-repeat: no-repeat;*/
+  text-align: center;*/
+
 }
 
 .final-img {
   height: 100%;
-  border: 8px solid red;
-/*  top: 0;
-  left: 0;
-  margin: 0 auto;
-  position: relative;
-  max-width: 600px;
-  */
-}
-/*add span css for smaller than 600px*/
-.score-page span {
-  top: 3%;
-  left: 33%;
-  width: 30%;
-  height: 50px;
-  position: absolute;
-  line-height: 50px;
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px dotted white;
-  background-color: rgba(255,255,255,0);
 }
 
-.score-page button {
-  display: block;
-  position: absolute;
+.final-img-2 {
+  width: 100%;
+  /*height: 100vh;*/
+  vertical-align: middle;
+}
+/*add span css for smaller than 600px*/
+
+.score-page span {
+
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+
+}
+
+#restart-quiz-button {
+  /*color: white;*/
   font-size: 1rem;
-  bottom: 5%;
-  left: 42%;
+
 
 }
 
@@ -233,6 +218,9 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
 
 /*Popup Boxes*/
@@ -258,6 +246,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 12px double #999;
 }
 
 .close {

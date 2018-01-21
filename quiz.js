@@ -44,27 +44,27 @@ const quizContent = {
   },
     {
     src:'https://78.media.tumblr.com/ed747e4423f415de5cce9ea8b332daa8/tumblr_o6v4funfbV1rdutw3o1_400.gif',
-    alt: 'Wadsworth "I choose to expose myself"'
+    alt: "Wadsworth with gun: 'I choose to expose myself'"
   },
     {
     src:'https://78.media.tumblr.com/tumblr_m7qe5ap6Oq1qakh43o1_500.gif',
-    alt: "The murder from the final ending"
+    alt: "Mr Green dramatically shooting Wadsworth"
   },
       {
     src:'https://78.media.tumblr.com/f63dc98017e9abc6e78c2ef311babc7f/tumblr_otw2ruUN961r3ix26o5_400.gif',
-    alt: "The Candlestick being unwrapped"
+    alt: "Close up of the Candlestick being unwrapped"
   },
       {
     src:'https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/21/14/anigif_enhanced-buzz-12971-1382379072-0.gif?downsize=715:*&output-format=auto&output-quality=auto',
-    alt: 'Mrs White “Husband should be like kleenex...”'
+    alt: "Mrs White: 'Husbands should be like kleenex...'"
   },
       {
     src:'https://media.giphy.com/media/eZPCBQegqOIjC/giphy.gif',
-    alt: 'I’ll tell you how it happened!'
+    alt: "Wadsworth running through the hall yelling: 'I’ll tell you how it happened!'"
   },
       {
     src:'https://78.media.tumblr.com/3b207dbfd3b837cf0905b582b539b428/tumblr_ocvq82JM5F1qz7otto10_400.gif',
-    alt: "The cook gif"
+    alt: "The cook sharpening a knife and wielding it towards Wadsworth"
   }]
   };
 
@@ -150,13 +150,14 @@ function correctAnswer() {
 
 function wrongAnswer () {
   console.log(`The wrongAnswer function ran`);
+  console.log(`${quizContent.gifs[currentInd - 1].alt}`);
   $('body').append(`
     <div class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
         <h2>I'm so sorry, that is not correct.</h2>
         <div class="gif-container">
-          <img src=${quizContent.gifs[currentInd - 1].src} alt=${quizContent.gifs[currentInd - 1].alt} class="popup-gif">
+          <img src=${quizContent.gifs[currentInd - 1].src} alt="${quizContent.gifs[currentInd - 1].alt}" class="popup-gif">
         </div>
         <span id="correct-answer">The correct answer is ${quizContent.correct[currentInd - 1]}</span>
       </div>

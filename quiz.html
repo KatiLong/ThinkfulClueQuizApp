@@ -9,6 +9,39 @@
 </head>
 
 <body>
+    <div class="info-bar">
+      <div class="col-2">
+        <span class="number">Question ${currentInd + 1} of 10</span>
+      </div>
+      <div class="col-2">
+        <span class="score">Score <span class="score-box">${currentScore}</span></span>
+      </div>
+    </div>
+
+    <form class="js-quiz-form">
+
+        <fieldset name="possible-answers" class="quiz-text">
+
+          <legend>${quizContent.questions[currentInd]}</legend>
+
+          <input type="radio" name="answer" id="answer1" required value ="${quizContent.choices[currentInd][0]}">
+          <label for="answer1">${quizContent.choices[currentInd][0]}</label>
+          <br>
+          <input type="radio" name="answer" id="answer2" required value="${quizContent.choices[currentInd][1]}">
+          <label for="answer2">${quizContent.choices[currentInd][1]}</label>
+          <br>
+          <input type="radio" name="answer" id="answer3" required value="${quizContent.choices[currentInd][2]}">
+          <label for="answer3">${quizContent.choices[currentInd][2]}</label>
+          <br>
+          <input type="radio" name="answer" id="answer4" required value="${quizContent.choices[currentInd][3]}">
+          <label for="answer1">${quizContent.choices[currentInd][3]}</label>
+          <br>
+        </fieldset>
+
+        <div class="wrapper">
+          <button type="submit" id="answer-button"><img src="https://i.lensdump.com/i/M188D.jpg" id="submit-img" alt="Clue Answer button"></button>
+        </div>
+    </form>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="quiz.js"></script>

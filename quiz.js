@@ -299,7 +299,7 @@ function renderPage () {
 }
 
 // document ready function
-$(renderPage());
+// $(renderPage());
 
 
 

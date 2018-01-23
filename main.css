@@ -105,7 +105,7 @@ input {
 
 legend {
   padding: 15px 0px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 fieldset {
@@ -145,35 +145,28 @@ fieldset {
 /*----------------------------------------------------------*/
 /*"Info Bar" styling (above form)*/
 .info-bar{
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+
   max-width: 650px;
   width: 100%;
   font-size: 0px;
   margin: 45px auto 35px;
-
 }
 
-.col-2 {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  font-size: 20px;
-}
 
 .score, .number {
-  padding: 13px 0 11px;
+  padding: 10px 0;
   border-top: 1px white solid;
   border-bottom: 1px white solid;
+  font-size: 24px;
 }
 
 .score-box {
-  font-size: 24px;
   background-color: white;
   color: #900;
-  display: inline-flex;
   align-items: center;
   padding: 2px 4px 0.5px 4px;
-
 }
 
 /*----------------------------------------------------------*/

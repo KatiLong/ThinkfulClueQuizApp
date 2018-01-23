@@ -146,17 +146,14 @@ fieldset {
 /*"Info Bar" styling (above form)*/
 .info-bar{
   display: flex;
-  justify-content: center;
-  align-content: space-between;
+  justify-content: space-evenly;
+
   max-width: 650px;
   width: 100%;
   font-size: 0px;
   margin: 45px auto 35px;
 }
 
-.col-2 {
-  width: 50%;
-}
 
 .score, .number {
   padding: 10px 0;

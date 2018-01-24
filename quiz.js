@@ -70,6 +70,15 @@ const quizContent = {
 
   let currentInd = 0;
   let currentScore = 0;
+  let currentHTML = `
+    <header role="banner">
+
+      <img src="https://i.lensdump.com/i/n76ka.jpg" alt="Clue Logo" class="logo">
+      <h2>The Movie Quiz</h2>
+      <p id="subtitle">More GIF's than there are Endings</p>
+
+    </header>
+    <main role="main"></main>`
 
 
 // load next set of question and answers

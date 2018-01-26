@@ -71,8 +71,35 @@ const quizContent = {
   let currentInd = 0;
   let currentScore = 0;
   let quizHTML = ``;
-  const startPageHTML = ``;
+  const startPageHTML = `
+    <div class="start-page">
+      <button type="button" id="start-button">
+        <span>Begin Quiz</span>
+      </button>
+    </div>`;
   const scorePageHTML = ``;
+  const correctAnswerHTML = `
+    <div class="overlay">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <h2>Correct!</h2>
+        <div class="gif-container">
+          <img src="https://78.media.tumblr.com/017a05d490a72db49f457e06e455acbb/tumblr_om53r2LXYL1qms0wao3_500.gif" alt="Correct answer GIF - 'I am merely a humble butler...'" class="popup-gif">
+        </div>
+      </div>
+    </div>`;
+  const wrongAnswerHTML = ``;
+  const selectAnswerHTML = `
+    <div class="overlay">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <h2>Please, pick an answer.</h2>
+        <div class="gif-container">
+          <img src="https://media.giphy.com/media/lH6mJIKkCwQo0/giphy.gif" alt="Please make a selection GIF - Mrs. White is fed up" class="popup-gif">
+        </div>
+      </div>
+    </div>`;
+
 
 
 // load next set of question and answers
@@ -153,18 +180,9 @@ function answerChoice (sel){
   }
 }
 
-function correctAnswer() {
+function correctAnswer() { //rename displayCorrectAnswer
   console.log(`The correctAnswer function ran`);
-  $('body').append(`
-    <div class="overlay">
-      <div class="popup">
-        <a class="close" href="#">&times;</a>
-        <h2>Correct!</h2>
-        <div class="gif-container">
-          <img src="https://78.media.tumblr.com/017a05d490a72db49f457e06e455acbb/tumblr_om53r2LXYL1qms0wao3_500.gif" alt="Correct answer GIF - 'I am merely a humble butler...'" class="popup-gif">
-        </div>
-      </div>
-    </div>`);
+  $('body').append(`${correctAnswerHTML}`);
   $('.close').click(function () {
     $('.overlay').remove();
   })
@@ -193,16 +211,7 @@ function wrongAnswer () {
 function selectionRequired(){
   console.log('The selectionRequired function ran');
   //popup selection required gif
-  $('body').append(`
-    <div class="overlay">
-      <div class="popup">
-        <a class="close" href="#">&times;</a>
-        <h2>Please, pick an answer.</h2>
-        <div class="gif-container">
-          <img src="https://media.giphy.com/media/lH6mJIKkCwQo0/giphy.gif" alt="Please make a selection GIF - Mrs. White is fed up" class="popup-gif">
-        </div>
-      </div>
-    </div>`);
+  $('body').append(`${selectAnswerHTML}`);
   $('.close').click(function () {
     $('.overlay').remove();
   })
@@ -210,11 +219,10 @@ function selectionRequired(){
 }
 
 // load the final score page to the screen
-function finalScorePage (){
+function finalScorePage (){ //rename displayScorePage
   console.log('The finalScorePage function ran');
   $('main').html(`
     <div class="score-page">
-
         <div id= "score-bar">
           <div class="col-2 final-score">Final Score ${currentScore} out of 10</div>
           <div class="col-2">
@@ -253,13 +261,7 @@ function perfectScore () {
 function startPage() {
   //on document ready, render startPage div
   // console.log(`The startPage function ran`);
-  $('body').html(`
-    <div class="start-page">
-      <button type="button" id="start-button">
-        <span>Begin Quiz</span>
-      </button>
-    </div>
-    `);
+  $('body').html(`${startPageHTML}`);
 }
 
 // Listen for the Start Quiz button to be clicked

@@ -70,18 +70,31 @@ const quizContent = {
 
   let currentInd = 0;
   let currentScore = 0;
-  let currentHTML = `
-    <header role="banner">
-
-      <img src="https://i.lensdump.com/i/n76ka.jpg" alt="Clue Logo" class="logo">
-      <h2>The Movie Quiz</h2>
-      <p id="subtitle">More GIF's than there are Endings</p>
-
-    </header>
-    <main role="main"></main>`
+  let quizHTML = ``;
+  const startPageHTML = ``;
+  const scorePageHTML = ``;
 
 
 // load next set of question and answers
+
+// Split into multiple functions - renderQuiz, renderQuestion and displayQuiz?
+// Where to add currentInd?
+function renderQuiz () {
+  //pair of startQuiz? for header and main
+  console.log(`The renderQuiz function ran`)
+}
+
+function renderQuestion () {
+  console.log(`The renderQuestion function ran`)
+  //write HTML string
+}
+
+function displayQuiz () {
+  console.log(`The displayQuiz function ran`)
+  //appends HTML to page
+}
+
+
 function loadQuestion () {
   console.log(`The loadQuestion function ran & currentInd is: ${currentInd}`);
   $('main').html(`

@@ -99,6 +99,16 @@ const quizContent = {
         </div>
       </div>
     </div>`;
+    const perfectScoreHTML = `
+    <div class="overlay">
+      <div class="popup">
+        <a class="close" href="#">&times;</a>
+        <h2>You know too much. A <i>perfect<i> score.</h2>
+        <div class="gif-container">
+          <img src="https://78.media.tumblr.com/200d6ebe9fbeaf6ed7fcd8bed8c7a2e5/tumblr_otw2ruUN961r3ix26o1_400.gif" alt="Concerned faces in the dark" class="popup-gif">
+        </div>
+      </div>
+    </div>`
 
 
 
@@ -243,16 +253,7 @@ function restartQuiz () {
 
 function perfectScore () {
   console.log("The perfectScore function ran")
-    $('body').append(`
-    <div class="overlay">
-      <div class="popup">
-        <a class="close" href="#">&times;</a>
-        <h2>You know too much. A <i>perfect<i> score.</h2>
-        <div class="gif-container">
-          <img src="https://78.media.tumblr.com/200d6ebe9fbeaf6ed7fcd8bed8c7a2e5/tumblr_otw2ruUN961r3ix26o1_400.gif" alt="Concerned faces in the dark" class="popup-gif">
-        </div>
-      </div>
-    </div>`);
+  $('body').append(`${perfectScoreHTML}`);
   $('.close').click(function () {
     $('.overlay').remove();
   })

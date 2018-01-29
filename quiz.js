@@ -303,9 +303,3 @@ function renderPage () {
 // document ready function
 $(renderPage());
 
-
-
-
-
-
-

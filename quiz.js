@@ -282,7 +282,7 @@ function submitQuestion () {
     else {
       answerChoice(selectAns);
       if (currentScore === 10) {
-        perfectScore();
+        $('.close').click((event) => perfectScore())
       }
       finalScorePage();
       // console.log('Current index is higher than 10');

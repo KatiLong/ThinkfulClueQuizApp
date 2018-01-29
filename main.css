@@ -246,9 +246,9 @@ button {
 
 .close {
   position: absolute;
-  top: -5px;
+  top: 0px;
   right: 7px;
-  font-size: 30px;
+  font-size: 50px;
   color: red;
   text-decoration: none;
 }

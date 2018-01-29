@@ -102,7 +102,7 @@ function loadQuestion () {
           <label for="answer3">${quizContent.choices[currentInd][2]}</label>
           <br>
           <input type="radio" name="answer" id="answer4" required value="${quizContent.choices[currentInd][3]}">
-          <label for="answer1">${quizContent.choices[currentInd][3]}</label>
+          <label for="answer4">${quizContent.choices[currentInd][3]}</label>
           <br>
         </fieldset>
 
@@ -232,11 +232,13 @@ function startPage() {
   //on document ready, render startPage div
   // console.log(`The startPage function ran`);
   $('body').html(`
-    <div class="start-page">
-      <button type="button" id="start-button">
-        <span>Begin Quiz</span>
-      </button>
-    </div>
+    <main role="main">
+      <div class="start-page">
+        <button type="button" id="start-button">
+          <span>Begin Quiz</span>
+        </button>
+      </div>
+    </main>
     `);
 }
 

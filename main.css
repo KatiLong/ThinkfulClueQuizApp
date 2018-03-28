@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   padding-top: 100vh;
-  background: url(http://polklein.com/share/clue.jpg) center center;
+  background: url(images/clue-card.jpg) center center;
   background-size: cover;
   cursor: pointer;
 }

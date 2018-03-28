@@ -1,3 +1,5 @@
+'use strict';
+
 // Array that stores all Quiz Data
 const quizContent = {
   questions: [
@@ -107,7 +109,7 @@ function loadQuestion () {
         </fieldset>
 
         <div class="wrapper">
-          <button type="submit" id="answer-button"><img src="https://i.lensdump.com/i/M188D.jpg" id="submit-img" alt="Clue Answer button"></button>
+          <button type="submit" id="answer-button"><img src="https://i.lensdump.com/i/M188D.jpg" id="submit-img" alt="Clue Answer"></button>
         </div>
     </form>`);
   currentInd++;

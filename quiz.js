@@ -2,7 +2,7 @@
 
 // Array that stores all Quiz Data
 const quizContent = {
-  questions: [
+    questions: [
     '"One Plus Two Plus Two Plus One…." How many bullets are left in the gun?',
     'Finish this Quote: "Communism is just a ..." ',
     'Who is easily startled and claims “I didn’t do it!” throughout the movie?',
@@ -14,70 +14,69 @@ const quizContent = {
     'Who calls the house?',
     'In all three endings, who is never a murderer?'
   ],
-  choices: [
+    choices: [
     ['1', '2', '3', '0'],
     ['red flag', 'red herring', 'tea kettle', 'singing telegram'],
     ['Miss Scarlett', 'Mr Green', 'Professor Plum', 'Mr Boddy'],
     ['pea soup', 'meatloaf', 'monkey’s brains', 'roast chicken'],
-    ['Mr Green','Mrs White','Yvette','Wadsworth'],
-    ['Mr. Green, In the Hall, with the Revolver', 'Colonel Mustard, Billard Room, with the Candlestick','Mrs Peacock, Library, with the Rope', 'Mrs. White, Study, with the lead pipe'],
-    ['Surprises','Weapons', 'Flowers', 'Surprises and Weapons'],
-    ['6','5', '3', '2'],
-    ['The Prime Minister','The President','J Edgar Hoover','Tim Curry'],
+    ['Mr Green', 'Mrs White', 'Yvette', 'Wadsworth'],
+    ['Mr. Green, In the Hall, with the Revolver', 'Colonel Mustard, Billard Room, with the Candlestick', 'Mrs Peacock, Library, with the Rope', 'Mrs. White, Study, with the lead pipe'],
+    ['Surprises', 'Weapons', 'Flowers', 'Surprises and Weapons'],
+    ['6', '5', '3', '2'],
+    ['The Prime Minister', 'The President', 'J Edgar Hoover', 'Tim Curry'],
     ['Mrs Scarlett', 'Mrs Peacock', 'Mrs White', 'The Cook']
   ],
-  correct: ['1', 'red herring', 'Mr Green', 'monkey’s brains', 'Wadsworth', 'Mr. Green, In the Hall, with the Revolver', 'Surprises and Weapons', '5', 'J Edgar Hoover', 'The Cook'],
-  gifs: [
-  {
-    src:'https://78.media.tumblr.com/80fb6e1e9571fb5b16fbd724b955bf89/tumblr_p1jq7vb1eS1sqr9zvo7_r1_400.gif',
-    alt: "There's only one shot that got that chandelier. That's one plus two plus ONE plus one."
+    correct: ['1', 'red herring', 'Mr Green', 'monkey’s brains', 'Wadsworth', 'Mr. Green, In the Hall, with the Revolver', 'Surprises and Weapons', '5', 'J Edgar Hoover', 'The Cook'],
+    gifs: [
+        {
+            src: 'https://78.media.tumblr.com/80fb6e1e9571fb5b16fbd724b955bf89/tumblr_p1jq7vb1eS1sqr9zvo7_r1_400.gif',
+            alt: "There's only one shot that got that chandelier. That's one plus two plus ONE plus one."
   },
-  {
-    src:'https://media.giphy.com/media/6JpaIdpgg5iO4/giphy.gif',
-    alt: 'It’s a free country, don’t you know that?'
+        {
+            src: 'https://media.giphy.com/media/6JpaIdpgg5iO4/giphy.gif',
+            alt: 'It’s a free country, don’t you know that?'
   },
-   {
-    src:'https://media.giphy.com/media/12520JoXrCw3C/giphy.gif',
-    alt: 'Dinner gong rung by The Cook'
+        {
+            src: 'https://media.giphy.com/media/12520JoXrCw3C/giphy.gif',
+            alt: 'Dinner gong rung by The Cook'
   },
-    {
-    src:'https://78.media.tumblr.com/3c7d956718099422c98a34e799268600/tumblr_ocvq82JM5F1qz7otto8_400.gif',
-    alt: "Clue dinner guests sipping soup"
+        {
+            src: 'https://78.media.tumblr.com/3c7d956718099422c98a34e799268600/tumblr_ocvq82JM5F1qz7otto8_400.gif',
+            alt: "Clue dinner guests sipping soup"
   },
-    {
-    src:'https://78.media.tumblr.com/ed747e4423f415de5cce9ea8b332daa8/tumblr_o6v4funfbV1rdutw3o1_400.gif',
-    alt: "Wadsworth with gun: 'I choose to expose myself'"
+        {
+            src: 'https://78.media.tumblr.com/ed747e4423f415de5cce9ea8b332daa8/tumblr_o6v4funfbV1rdutw3o1_400.gif',
+            alt: "Wadsworth with gun: 'I choose to expose myself'"
   },
-    {
-    src:'https://78.media.tumblr.com/tumblr_m7qe5ap6Oq1qakh43o1_500.gif',
-    alt: "Mr Green dramatically shooting Wadsworth"
+        {
+            src: 'https://78.media.tumblr.com/tumblr_m7qe5ap6Oq1qakh43o1_500.gif',
+            alt: "Mr Green dramatically shooting Wadsworth"
   },
-      {
-    src:'https://78.media.tumblr.com/f63dc98017e9abc6e78c2ef311babc7f/tumblr_otw2ruUN961r3ix26o5_400.gif',
-    alt: "Close up of the Candlestick being unwrapped"
+        {
+            src: 'https://78.media.tumblr.com/f63dc98017e9abc6e78c2ef311babc7f/tumblr_otw2ruUN961r3ix26o5_400.gif',
+            alt: "Close up of the Candlestick being unwrapped"
   },
-      {
-    src:'https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/21/14/anigif_enhanced-buzz-12971-1382379072-0.gif?downsize=715:*&output-format=auto&output-quality=auto',
-    alt: "Mrs White: 'Husbands should be like kleenex...'"
+        {
+            src: 'https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/21/14/anigif_enhanced-buzz-12971-1382379072-0.gif?downsize=715:*&output-format=auto&output-quality=auto',
+            alt: "Mrs White: 'Husbands should be like kleenex...'"
   },
-      {
-    src:'https://media.giphy.com/media/eZPCBQegqOIjC/giphy.gif',
-    alt: "Wadsworth running through the hall yelling: 'I’ll tell you how it happened!'"
+        {
+            src: 'https://media.giphy.com/media/eZPCBQegqOIjC/giphy.gif',
+            alt: "Wadsworth running through the hall yelling: 'I’ll tell you how it happened!'"
   },
-      {
-    src:'https://78.media.tumblr.com/3b207dbfd3b837cf0905b582b539b428/tumblr_ocvq82JM5F1qz7otto10_400.gif',
-    alt: "The cook sharpening a knife and wielding it towards Wadsworth"
+        {
+            src: 'https://78.media.tumblr.com/3b207dbfd3b837cf0905b582b539b428/tumblr_ocvq82JM5F1qz7otto10_400.gif',
+            alt: "The cook sharpening a knife and wielding it towards Wadsworth"
   }]
-  };
+};
 
-  let currentInd = 0;
-  let currentScore = 0;
+let currentInd = 0;
+let currentScore = 0;
 
 
 // load next set of question and answers
-function loadQuestion () {
-  console.log(`The loadQuestion function ran & currentInd is: ${currentInd}`);
-  $('main').html(`
+function loadQuestion() {
+    $('main').html(`
 
     <div class="info-bar">
       <div class="col-2">
@@ -112,30 +111,30 @@ function loadQuestion () {
           <button type="submit" id="answer-button"><img src="https://i.lensdump.com/i/M188D.jpg" id="submit-img" alt="Clue Answer"></button>
         </div>
     </form>`);
-  currentInd++;
+    currentInd++;
 }
 
 // popup gif according to right or wrong answer, tally score
-function answerChoice (sel){
-  // console.log(`The correctAnswer function ran. The selected answer was: ${selectAns}`);
-  // console.log(`The correct answer was: ${quizContent.correct[currentInd - 1]}`);
-  // console.log(`current correct answer: ${quizContent.correct[currentInd-1]}`);
-  // console.log(`sel is ${sel}`);
+function answerChoice(sel) {
+    // console.log(`The correctAnswer function ran. The selected answer was: ${selectAns}`);
+    // console.log(`The correct answer was: ${quizContent.correct[currentInd - 1]}`);
+    // console.log(`current correct answer: ${quizContent.correct[currentInd-1]}`);
+    // console.log(`sel is ${sel}`);
 
-  if (sel === quizContent.correct[currentInd-1]) {
-    console.log("The answer was correct");
-    correctAnswer();
-    currentScore++;
+    if (sel === quizContent.correct[currentInd - 1]) {
+        console.log("The answer was correct");
+        correctAnswer();
+        currentScore++;
 
-  } else {
-    wrongAnswer();
-    console.log("The answer was incorrect");
-  }
+    } else {
+        wrongAnswer();
+        console.log("The answer was incorrect");
+    }
 }
 
 function correctAnswer() {
-  console.log(`The correctAnswer function ran`);
-  $('body').append(`
+    console.log(`The correctAnswer function ran`);
+    $('body').append(`
     <div class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
@@ -145,15 +144,15 @@ function correctAnswer() {
         </div>
       </div>
     </div>`);
-  $('.close').click(function () {
-    $('.overlay').remove();
-  })
+    $('.close').click(function () {
+        $('.overlay').remove();
+    })
 }
 
-function wrongAnswer () {
-  console.log(`The wrongAnswer function ran`);
-  console.log(`${quizContent.gifs[currentInd - 1].alt}`);
-  $('body').append(`
+function wrongAnswer() {
+    console.log(`The wrongAnswer function ran`);
+    console.log(`${quizContent.gifs[currentInd - 1].alt}`);
+    $('body').append(`
     <div class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
@@ -164,16 +163,16 @@ function wrongAnswer () {
         <span id="correct-answer">The correct answer is ${quizContent.correct[currentInd - 1]}</span>
       </div>
     </div>`);
-  $('.close').click(function () {
-    $('.overlay').remove();
-  })
+    $('.close').click(function () {
+        $('.overlay').remove();
+    })
 }
 
 // if submit button is pushed with no selection made
-function selectionRequired(){
-  console.log('The selectionRequired function ran');
-  //popup selection required gif
-  $('body').append(`
+function selectionRequired() {
+    console.log('The selectionRequired function ran');
+    //popup selection required gif
+    $('body').append(`
     <div class="overlay">
       <div class="popup">
         <a class="close" href="#">&times;</a>
@@ -183,16 +182,16 @@ function selectionRequired(){
         </div>
       </div>
     </div>`);
-  $('.close').click(function () {
-    $('.overlay').remove();
-  })
+    $('.close').click(function () {
+        $('.overlay').remove();
+    })
 
 }
 
 // load the final score page to the screen
-function finalScorePage (){
-  console.log('The finalScorePage function ran');
-  $('main').html(`
+function finalScorePage() {
+    $('header').hide();
+    $('main').html(`
     <div class="score-page">
 
         <div id= "score-bar">
@@ -203,18 +202,17 @@ function finalScorePage (){
         <div>
         <img src="http://media.tumblr.com/160d74e4cdfe7a85177d89a4fdfe9e45/tumblr_n2r7yrKSVR1rqrh0yo1_1280.jpg" alt="Black and White Cast Photo" class="final-img-2">
     </div>`);
-  $('header').remove();
 }
 
-function restartQuiz () {
-  $('body').on('click', '#restart-quiz-button', function (event) {
-    event.preventDefault();
-    window.location.reload(true);
-  })
+function restartQuiz() {
+    $('body').on('click', '#restart-quiz-button', function (event) {
+        event.preventDefault();
+        window.location.reload(true);
+    })
 }
 
-function perfectScore () {
-  console.log("The perfectScore function ran")
+function perfectScore() {
+    console.log("The perfectScore function ran")
     $('body').append(`
     <div class="overlay">
       <div class="popup">
@@ -225,83 +223,68 @@ function perfectScore () {
         </div>
       </div>
     </div>`);
-  $('.close').click(function () {
-    $('.overlay').remove();
-  })
+    $('.close').click(function () {
+        $('.overlay').remove();
+    })
 }
 
 function startPage() {
-  //on document ready, render startPage div
-  // console.log(`The startPage function ran`);
-  $('body').html(`
-    <main role="main">
+    //on document ready, render startPage div
+    // console.log(`The startPage function ran`);
+    $('main').html(`
       <div class="start-page">
         <button type="button" id="start-button">
           <span>Begin Quiz</span>
         </button>
       </div>
-    </main>
     `);
 }
 
 // Listen for the Start Quiz button to be clicked
-function startQuiz () {
-  $('body').on('click', '#start-button', function (){
-  // console.log(`The startQuiz function ran`);
-  //When clicked, appending the html in the main section
-  $('body').html(`
-    <header role="banner">
-
-      <img src="https://i.lensdump.com/i/n76ka.jpg" alt="Clue Logo" class="logo">
-      <h2>The Movie Quiz</h2>
-      <p id="subtitle">More GIF's than there are Endings</p>
-
-    </header>
-    <main role="main"></main>
-    `);
-  loadQuestion();
-  })
+function startQuiz() {
+    $('body').on('click', '#start-button', function () {
+        // console.log(`The startQuiz function ran`);
+        $('header').show();
+        loadQuestion();
+    })
 }
 
 // Listen for submit button on quiz page to be clicked & run correctAnswer/nextQuestion
-function submitQuestion () {
+function submitQuestion() {
 
-  $('body').on( 'click', '#answer-button', function (event){
-    event.preventDefault();
-    let selectAns = $('input[name=answer]:checked', '.js-quiz-form').val();
+    $('body').on('click', '#answer-button', function (event) {
+        event.preventDefault();
+        let selectAns = $('input[name=answer]:checked', '.js-quiz-form').val();
 
-    //If no answer is selected, prompt User
-    if (!selectAns) {
-      // console.log('selection is required');
-      selectionRequired(selectAns);
-    }
-    else if (currentInd < 10) {
-      answerChoice(selectAns);
-      loadQuestion();
-      console.log('There are still more questions');
-    }
-    //After all questions have been asked, Final Score Page is loaded
-    else {
-      answerChoice(selectAns);
-      if (currentScore === 10) {
-        $('.close').click((event) => perfectScore())
-      }
-      finalScorePage();
-      // console.log('Current index is higher than 10');
-    }
-  })
+        //If no answer is selected, prompt User
+        if (!selectAns) {
+            // console.log('selection is required');
+            selectionRequired(selectAns);
+        } else if (currentInd < 10) {
+            answerChoice(selectAns);
+            loadQuestion();
+        }
+        //After all questions have been asked, Final Score Page is loaded
+        else {
+            answerChoice(selectAns);
+            if (currentScore === 10) {
+                $('.close').click((event) => perfectScore())
+            }
+            finalScorePage();
+            // console.log('Current index is higher than 10');
+        }
+    })
 
-  let selectAns = ``;
+    let selectAns = ``;
 }
 
 // Where all functions will be invoked
-function renderPage () {
-  startPage();
-  startQuiz();
-  submitQuestion();
-  restartQuiz();
+function renderPage() {
+    startPage();
+    startQuiz();
+    submitQuestion();
+    restartQuiz();
 }
 
 // document ready function
 $(renderPage());
-

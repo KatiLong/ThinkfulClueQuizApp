@@ -1,6 +1,29 @@
 'use strict';
 
 // Array that stores all Quiz Data
+//class quizPage {
+//    constructor(question, choices, correct) {
+//        this.question = question;
+//        this.choices = choices;
+//        this.correct = correct;
+//    }
+//
+//    speak() {
+//        console.log(`${this.name} makes a noise`);
+//    }
+//}
+//const quizContent2 = [
+//    {},
+//    {},
+//    {},
+//    {},
+//    {},
+//    {},
+//    {},
+//    {},
+//    {},
+//    {}
+//]
 const quizContent = {
     questions: [
     '"One Plus Two Plus Two Plus One…." How many bullets are left in the gun?',

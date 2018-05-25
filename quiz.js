@@ -12,18 +12,74 @@
 //        console.log(`${this.name} makes a noise`);
 //    }
 //}
-//const quizContent2 = [
-//    {},
-//    {},
-//    {},
-//    {},
-//    {},
-//    {},
-//    {},
-//    {},
-//    {},
-//    {}
-//]
+const quizContent2 = [
+    {
+        question: '"One Plus Two Plus Two Plus One…." How many bullets are left in the gun?',
+        choices: ['1', '2', '3', '0'],
+        correct: '1',
+        gifs: {
+            src: 'https://78.media.tumblr.com/80fb6e1e9571fb5b16fbd724b955bf89/tumblr_p1jq7vb1eS1sqr9zvo7_r1_400.gif',
+            alt: "There's only one shot that got that chandelier. That's one plus two plus ONE plus one."
+        }
+    },
+    {
+        question: 'Finish this Quote: "Communism is just a ..." ',
+        choices: ['red flag', 'red herring', 'tea kettle', 'singing telegram'],
+        correct: 'red herring',
+        gifs: {
+            src: 'https://media.giphy.com/media/6JpaIdpgg5iO4/giphy.gif',
+            alt: 'It’s a free country, don’t you know that?'
+        }
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    },
+    {
+        question: '',
+        choices: [],
+        correct: '',
+        gifs: {}
+    }
+];
 const quizContent = {
     questions: [
     '"One Plus Two Plus Two Plus One…." How many bullets are left in the gun?',

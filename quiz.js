@@ -32,52 +32,76 @@ const quizContent2 = [
         }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'Who is easily startled and claims “I didn’t do it!” throughout the movie?',
+        choices: ['Miss Scarlett', 'Mr Green', 'Professor Plum', 'Mr Boddy'],
+        correct: 'Mr Green',
+        gifs: {
+            src: 'https://media.giphy.com/media/12520JoXrCw3C/giphy.gif',
+            alt: 'Dinner gong rung by The Cook, Mr Green spills drink on Mrs Peacock'
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'What did they eat at dinner?',
+        choices: ['pea soup', 'meatloaf', 'monkey’s brains', 'roast chicken'],
+        correct: 'monkey’s brains',
+        gifs: {
+            src: 'https://78.media.tumblr.com/3c7d956718099422c98a34e799268600/tumblr_ocvq82JM5F1qz7otto8_400.gif',
+            alt: "Clue dinner guests sipping soup"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'Who failed to keep a “long story short” throughout the movie?',
+        choices: ['Mr Green', 'Mrs White', 'Yvette', 'Wadsworth'],
+        correct: 'Wadsworth',
+        gifs: {
+            src: 'https://78.media.tumblr.com/ed747e4423f415de5cce9ea8b332daa8/tumblr_o6v4funfbV1rdutw3o1_400.gif',
+            alt: "Wadsworth with gun: 'I choose to expose myself'"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'Who killed Wadsworth?',
+        choices: ['Mr. Green, In the Hall, with the Revolver', 'Colonel Mustard, Billard Room, with the Candlestick', 'Mrs Peacock, Library, with the Rope', 'Mrs. White, Study, with the lead pipe'],
+        correct: 'Mr. Green, In the Hall, with the Revolve',
+        gifs: {
+            src: 'https://78.media.tumblr.com/tumblr_m7qe5ap6Oq1qakh43o1_500.gif',
+            alt: "Mr Green dramatically shooting Wadsworth"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'What’s in Mr. Boddy’s bag?',
+        choices: ['Surprises', 'Weapons', 'Flowers', 'Surprises and Weapons'],
+        correct: 'Surprises and Weapons',
+        gifs: {
+            src: 'https://78.media.tumblr.com/f63dc98017e9abc6e78c2ef311babc7f/tumblr_otw2ruUN961r3ix26o5_400.gif',
+            alt: "Close up of the Candlestick being unwrapped"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'How many husbands did Mrs. White have?',
+        choices: ['6', '5', '3', '2'],
+        correct: '5',
+        gifs: {
+            src: 'https://img.buzzfeed.com/buzzfeed-static/static/2013-10/enhanced/webdr06/21/14/anigif_enhanced-buzz-12971-1382379072-0.gif?downsize=715:*&output-format=auto&output-quality=auto',
+            alt: "Mrs White: 'Husbands should be like kleenex...'"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'Who calls the house?',
+        choices: ['The Prime Minister', 'The President', 'J Edgar Hoover', 'Tim Curry'],
+        correct: 'J Edgar Hoover',
+        gifs: {
+            src: 'https://media.giphy.com/media/eZPCBQegqOIjC/giphy.gif',
+            alt: "Wadsworth running through the hall yelling: 'I’ll tell you how it happened!'"
+        }
     },
     {
-        question: '',
-        choices: [],
-        correct: '',
-        gifs: {}
+        question: 'In all three endings, who is never a murderer?',
+        choices: ['Mrs Scarlett', 'Mrs Peacock', 'Mrs White', 'The Cook'],
+        correct: 'The Cook',
+        gifs: {
+            src: 'https://78.media.tumblr.com/3b207dbfd3b837cf0905b582b539b428/tumblr_ocvq82JM5F1qz7otto10_400.gif',
+            alt: "The cook sharpening a knife and wielding it towards Wadsworth"
+        }
     }
 ];
 const quizContent = {

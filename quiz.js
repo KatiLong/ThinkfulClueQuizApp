@@ -289,6 +289,7 @@ function selectionRequired() {
         $('.overlay').remove();
     })
 
+
 }
 
 // load the final score page to the screen
